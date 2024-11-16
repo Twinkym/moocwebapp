@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David De La Puente -Kirgo-" >
+    <title>Login - SocNet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="container">
+        <h1>Login - SocNet</h1>
+        <form action="{{ url_for('login') }}" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="passwd">Password:</label>
+            <input type="password" id="passwd" name="passwd" required><br>
+            <input type="submit" name="login_submit" value="Log In">
+        </form>
+    </div>
+</body>
+</html>
